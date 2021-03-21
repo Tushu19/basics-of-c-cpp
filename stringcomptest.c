@@ -6,26 +6,6 @@ void main()
 {
     char str1[20],str2[10];
     scanf("%s%s",str1,str2);
-    // int i=strlen(str2);
-    // for(int i=0;i<strlen(str1);)
-    // {
-    //     while(str2[j]!='\0')
-    //     {
-    //         printf("Check while loop\n");
-    //     if(str1[i]==str2[j++]) 
-    //         {
-    //         i++;
-    //         continue;
-    //         }
-    //     else 
-    //         {
-    //             i++;
-    //         break;  
-    //         } 
-    //     if(str2[j]='\0')
-    //         flag=1;
-    //     }
-    // }
     int flag=stringcomp(str1,str2);
     if(flag)
         printf("Found");
@@ -53,5 +33,4 @@ int stringcomp(char str1[20],char str2[10])
            return 1;
     }
     return 0;
-
 }
