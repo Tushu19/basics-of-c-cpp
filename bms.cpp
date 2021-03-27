@@ -65,33 +65,6 @@ public:
         else
             cout << "\nLooks like you haven't booked this seat yet :( ";
     }
-    // int check_user()
-    // {
-    //     int found,i;
-    //     string name[10][10] = {"tushar", "aayush"};
-    //     string pass[10][10] = {"1234", "3214"};
-    //     string name1, pass1;
-    //     cout << "\n Enter your name : ";
-    //     cin >> name1;
-    //     cout << "\n Enter your password : ";
-    //     cin >> pass1;
-    //     for (i = 0; i < 2; i++)
-    //     {
-    //         if (!strcmp(name1, name[i]))
-    //         {
-    //             if (!strcmp(pass1, pass[i]))
-    //                 found = 1;
-    //             else
-    //                 found = 0;
-    //         }
-    //         else
-    //         {
-    //             found = 0;
-    //             cout << "\nUser not found";
-    //         }
-    //     }
-    //     return found;
-    // }
 };
 
 int main()
@@ -116,16 +89,11 @@ label:
         switch (choice)
         {
         case 1:
-            // found=check_user();
-            // if(found)
-            // {
             cout << "\nEnter number of rows : ";
             cin >> m;
             cout << "\nEnter number of column : ";
             cin >> n;
             obj[slot - 1].create(m, n);
-            // }
-            // else cout<<"\n OOps";
             break;
         case 2:
             if (m && n)
